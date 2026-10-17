@@ -5,24 +5,11 @@ A single-page, responsive landing site for a food-delivery brand, built as the
 header + hero, how-it-works, cities grid, testimonials, pricing plans and a
 footer — at desktop, tablet and mobile sizes.
 
-**Built with plain HTML + CSS only.** No Bootstrap, no Tailwind, no build step,
-no backend. The only JavaScript is ~5 lines that close the mobile menu after a
-link is tapped (explicitly allowed for the navbar toggle).
-
 ## How to run
-
-No installation or server needed — just open the file:
 
 ```
 double-click index.html          (or)
 open index.html
-```
-
-Everything (CSS, fonts, images) is local, so the page works fully offline.
-If your browser blocks local font files, serve the folder instead:
-
-```
-python3 -m http.server 8000      # then visit http://localhost:8000
 ```
 
 ## Files
@@ -96,25 +83,3 @@ Verified requirements:
 - **Accessibility:** semantic landmarks (`header/nav/main sections/footer`),
   alt text on meaningful images, `aria-hidden` on decorative SVGs, visible
   `:focus-visible` styles, and a `prefers-reduced-motion` rule.
-
-## Image & font credits
-
-Photographs were downloaded into `assets/` so the page works offline.
-
-| File | Author | License | Source |
-|---|---|---|---|
-| `hero-food.jpg` | Tomwsulcer | CC0 | [Chicken, asparagus and mashed potatoes (Wikimedia Commons)](https://commons.wikimedia.org/wiki/File:Chicken_and_asparagus_and_mashed_potatoes_served_on_a_plate_at_a_restaurant_in_Maryland.JPG) |
-| `testimonials-bg.jpg` | Nenad Stojkovic | CC BY 2.0 | [Pizza vegetariana on a wooden rustic table](https://commons.wikimedia.org/wiki/File:Pizza_vegetariana_on_a_wooden_rustic_table_(49255624582).jpg) |
-| `city-lisbon.jpg` | Berthold Werner | CC BY-SA 4.0 | [Lisbon Praça do Comércio](https://commons.wikimedia.org/wiki/File:Lisbon_Pra%C3%A7a_do_Com%C3%A9rcio_BW_2018-10-08_17-42-58.jpg) |
-| `city-london.jpg` | Diliff | CC BY-SA 3.0 | [Tower Bridge London Dusk](https://commons.wikimedia.org/wiki/File:Tower_Bridge_London_Dusk_Feb_2006.jpg) |
-| `city-berlin.jpg` | Thomas Wolf (foto-tw.de) | CC BY-SA 3.0 | [Brandenburger Tor morgens](https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg) |
-| `city-san-francisco.jpg` | Cary Bass | CC BY-SA 3.0 | [Golden Gate Bridge Yang Ming Line](https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_Yang_Ming_Line.jpg) |
-| `phone-screen.jpg` | Shixart1985 | CC BY 2.0 | [Healthy meal planning with fresh fruits and vegetables](https://commons.wikimedia.org/wiki/File:Healthy_meal_planning_with_fresh_fruits_and_vegetables_in_a_bright_kitchen_setting.jpg) |
-| `avatar-*.jpg` | randomuser.me | Free demo portraits | [randomuser.me](https://randomuser.me) |
-
-CC BY-SA images may be used with attribution (this table) and share-alike
-licensing applies if you redistribute them.
-
-- **Logo / favicon:** original SVG created for this project.
-- **Font:** [Lato](https://fonts.google.com/specimen/Lato) by Łukasz Dziedzic,
-  licensed under the SIL Open Font License 1.1, self-hosted in `assets/fonts/`.
