@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="OmniFood — say goodbye to junk food and hello to super healthy food, delivered to your door." />
+  <title>OmniFood</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="top">
+
+  <!-- ============================================================= -->
+  <!-- Section 1a: Header / navigation                                -->
+  <!-- ============================================================= -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+
+      <!-- Logo -->
+      <a href="#top" class="logo" aria-label="OmniFood home">
+        <img src="assets/logo.svg" alt="OmniFood logo" width="56" height="56" />
+      </a>
+
+      <!-- CSS-only hamburger toggle (a tiny script closes it on link click) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+
+      <!-- Desktop navigation -->
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#food-delivery">Food delivery</a></li>
+          <li><a class="nav-link" href="#how-it-works">How it works</a></li>
+          <li><a class="nav-link" href="#cities">Our cities</a></li>
+          <li><a class="nav-link" href="#sign-up">Sign-up</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger button (tablet &amp; mobile only) -->
+      <label for="nav-toggle" class="nav-burger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Collapsed navigation panel -->
+      <nav class="nav-panel" aria-label="Collapsed navigation">
+        <a class="nav-link" href="#food-delivery">Food delivery</a>
+        <a class="nav-link" href="#how-it-works">How it works</a>
+        <a class="nav-link" href="#cities">Our cities</a>
+        <a class="nav-link" href="#sign-up">Sign-up</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================= -->
+  <!-- Section 1b: Hero / top banner                                  -->
+  <!-- ============================================================= -->
+  <section id="food-delivery" class="hero">
+    <!-- Background image + dark overlay -->
+    <img src="assets/hero-food.jpg"
+         alt="Healthy gourmet dish served on a dark table"
+         class="hero-bg" />
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="wrap">
+      <h1 class="hero-title">
+        <span>Goodbye junk food</span>
+        <span>Hello super healthy food</span>
+      </h1>
+
+      <div class="hero-actions">
+        <a href="#sign-up" class="btn btn--primary">I&rsquo;m Hungry</a>
+        <a href="#how-it-works" class="btn btn--ghost">Show me more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- Section 2: How it works (3 steps)                              -->
+  <!-- ============================================================= -->
+  <section id="how-it-works" class="how">
+    <div class="wrap">
+      <!-- Short orange rule at the top centre -->
+      <span class="how-rule" aria-hidden="true"></span>
+
+      <div class="how-grid">
+
+        <!-- Phone mockup -->
+        <div class="phone" aria-label="OmniFood app preview">
+          <span class="phone-camera" aria-hidden="true"></span>
+          <span class="phone-speaker" aria-hidden="true"></span>
+          <div class="phone-screen">
+            <div class="phone-status" aria-hidden="true">
+              <span>&bull;&bull;&bull;&nbsp; Carrier</span>
+              <span>9:41 AM</span>
+              <span>100%</span>
+            </div>
+            <img src="assets/phone-screen.jpg"
+                 alt="Fresh fruit and vegetables inside the OmniFood app"
+                 class="phone-photo" />
+            <span class="phone-shade" aria-hidden="true"></span>
+            <img src="assets/logo.svg" alt="" class="phone-badge" />
+          </div>
+          <span class="phone-home" aria-hidden="true"></span>
+        </div>
+
+        <!-- Three numbered steps -->
+        <div>
+          <ol class="steps">
+            <li class="step">
+              <span class="step-number">1</span>
+              <p>Choose plan that fits best for your need and sign-up today</p>
+            </li>
+            <li class="step">
+              <span class="step-number">2</span>
+              <p>Pay for the plan and download the app</p>
+            </li>
+            <li class="step">
+              <span class="step-number">3</span>
+              <p>You are done start ordering!!</p>
+            </li>
+          </ol>
+
+          <!-- Store badges -->
+          <div class="stores">
+            <a href="#sign-up" class="store-badge">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5.5 3.4v17.2c0 .8.9 1.3 1.6.8l13.8-8.6c.6-.4.6-1.2 0-1.6L7.1 2.6c-.7-.5-1.6 0-1.6.8z" />
+              </svg>
+              <span class="store-text">
+                <span class="store-small">Get it on</span>
+                <span class="store-big">Google play</span>
+              </span>
+            </a>
+
+            <a href="#sign-up" class="store-badge">
+              <svg viewBox="0 0 384 512" aria-hidden="true">
+                <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z" />
+              </svg>
+              <span class="store-text">
+                <span class="store-small">Download on the</span>
+                <span class="store-big">App Store</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- Section 3: Our cities (4 cards grid)                           -->
+  <!-- ============================================================= -->
+  <section id="cities" class="section">
+    <div class="wrap">
+      <h2 class="section-title">
+        We&rsquo;re currently in these cities
+        <span class="section-rule" aria-hidden="true"></span>
+      </h2>
+
+      <div class="cities-grid">
+
+        <!-- Lisbon -->
+        <article class="city-card">
+          <img src="assets/city-lisbon.jpg" alt="Praça do Comércio in Lisbon, Portugal"
+               class="city-photo" loading="lazy" width="900" height="618" />
+          <h3 class="city-name">Lisbon</h3>
+          <ul class="city-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8 14s1.5 2.2 4 2.2 4-2.2 4-2.2" stroke-linecap="round" />
+                <circle cx="9" cy="9.5" r="1.1" fill="currentColor" stroke="none" />
+                <circle cx="15" cy="9.5" r="1.1" fill="currentColor" stroke="none" />
+              </svg>
+              1600+ Happy Eaters
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8l-5.8 3.1 1.1-6.5L2.6 9.3l6.5-.9z" />
+              </svg>
+              50+ Chefs
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.7a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4-.6.2-1.2.2-1.8.1a4.1 4.1 0 0 0 3.8 2.9A8.2 8.2 0 0 1 2 18.6a11.6 11.6 0 0 0 6.3 1.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.3z" />
+              </svg>
+              @omnifood_li
+            </li>
+          </ul>
+        </article>
+
+        <!-- London -->
+        <article class="city-card">
+          <img src="assets/city-london.jpg" alt="Tower Bridge in London, United Kingdom"
+               class="city-photo" loading="lazy" width="900" height="399" />
+          <h3 class="city-name">London</h3>
+          <ul class="city-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8 14s1.5 2.2 4 2.2 4-2.2 4-2.2" stroke-linecap="round" />
+                <circle cx="9" cy="9.5" r="1.1" fill="currentColor" stroke="none" />
+                <circle cx="15" cy="9.5" r="1.1" fill="currentColor" stroke="none" />
+              </svg>
+              1600+ Happy Eaters
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8l-5.8 3.1 1.1-6.5L2.6 9.3l6.5-.9z" />
+              </svg>
+              50+ Chefs
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.7a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4-.6.2-1.2.2-1.8.1a4.1 4.1 0 0 0 3.8 2.9A8.2 8.2 0 0 1 2 18.6a11.6 11.6 0 0 0 6.3 1.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.3z" />
+              </svg>
+              @omnifood_ld
+            </li>
+          </ul>
+        </article>
+
+        <!-- Berlin -->
+        <article class="city-card">
+          <img src="assets/city-berlin.jpg" alt="Brandenburg Gate in Berlin, Germany"
+               class="city-photo" loading="lazy" width="900" height="601" />
+          <h3 class="city-name">Berlin</h3>
+          <ul class="city-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8 14s1.5 2.2 4 2.2 4-2.2 4-2.2" stroke-linecap="round" />
+                <circle cx="9" cy="9.5" r="1.1" fill="currentColor" stroke="none" />
+                <circle cx="15" cy="9.5" r="1.1" fill="currentColor" stroke="none" />
+              </svg>
+              1400+ Happy Eaters
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8l-5.8 3.1 1.1-6.5L2.6 9.3l6.5-.9z" />
+              </svg>
+              70+ Chefs
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.7a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4-.6.2-1.2.2-1.8.1a4.1 4.1 0 0 0 3.8 2.9A8.2 8.2 0 0 1 2 18.6a11.6 11.6 0 0 0 6.3 1.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.3z" />
+              </svg>
+              @omnifood_br
+            </li>
+          </ul>
+        </article>
+
+        <!-- San Francisco -->
+        <article class="city-card">
+          <img src="assets/city-san-francisco.jpg" alt="Golden Gate Bridge in San Francisco, USA"
+               class="city-photo" loading="lazy" width="900" height="675" />
+          <h3 class="city-name">San-Francisco</h3>
+          <ul class="city-list">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8 14s1.5 2.2 4 2.2 4-2.2 4-2.2" stroke-linecap="round" />
+                <circle cx="9" cy="9.5" r="1.1" fill="currentColor" stroke="none" />
+                <circle cx="15" cy="9.5" r="1.1" fill="currentColor" stroke="none" />
+              </svg>
+              1800+ Happy Eaters
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8l-5.8 3.1 1.1-6.5L2.6 9.3l6.5-.9z" />
+              </svg>
+              50+ Chefs
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.7a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4-.6.2-1.2.2-1.8.1a4.1 4.1 0 0 0 3.8 2.9A8.2 8.2 0 0 1 2 18.6a11.6 11.6 0 0 0 6.3 1.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.3z" />
+              </svg>
+              @omnifood_sf
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- Section 4: Testimonials (3 quotes on image background)         -->
+  <!-- ============================================================= -->
+  <section id="testimonials" class="testimonials">
+    <img src="assets/testimonials-bg.jpg"
+         alt="Freshly baked pizzas on a rustic wooden table"
+         class="testimonials-bg" loading="lazy" />
+    <div class="testimonials-overlay" aria-hidden="true"></div>
+
+    <div class="wrap">
+      <h2 class="section-title section-title--light">
+        Our customer can&rsquo;t live without us
+        <span class="section-rule" aria-hidden="true"></span>
+      </h2>
+
+      <div class="quotes">
+
+        <figure class="quote">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote class="quote-text">
+            Omnifood is just awesome! I just launched a startup which leaves me with no time
+            for cooking, so OmniFood is a life-saver. Now that I got used to it, I couldn't
+            live without my daily meals!
+          </blockquote>
+          <figcaption class="quote-author">
+            <img src="assets/avatar-alberto.jpg" alt="Portrait of Alberto Duncan"
+                 class="avatar" loading="lazy" width="44" height="44" />
+            <span class="author-name">Alberto Duncan</span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote class="quote-text">
+            Inexpensive, healthy and great-tasting meals, delivered right to my home. We have
+            lots of food delivery here in Lisbon, but no one comes even close to OmniFood.
+            Me and my family are so in love!
+          </blockquote>
+          <figcaption class="quote-author">
+            <img src="assets/avatar-joana.jpg" alt="Portrait of Joana Silva"
+                 class="avatar" loading="lazy" width="44" height="44" />
+            <span class="author-name">Joana Silva</span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote class="quote-text">
+            I was looking for a quick and easy food delivery service in San Francisco. I tried
+            a lot of them and ended up with OmniFood. Best food delivery service in the Bay Area.
+            Keep up the great work!
+          </blockquote>
+          <figcaption class="quote-author">
+            <img src="assets/avatar-milton.jpg" alt="Portrait of Milton Chapman"
+                 class="avatar" loading="lazy" width="44" height="44" />
+            <span class="author-name">Milton Chapman</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- Section 5: Pricing plans (3 cards)                             -->
+  <!-- ============================================================= -->
+  <section id="sign-up" class="pricing">
+    <div class="wrap">
+      <h2 class="section-title">
+        Start eating healthy today
+        <span class="section-rule" aria-hidden="true"></span>
+      </h2>
+
+      <div class="plans">
+
+        <!-- Premium -->
+        <article class="plan-card">
+          <h3 class="plan-name">Premium</h3>
+          <p class="plan-price-line">
+            <span class="plan-price">$399</span><span class="plan-period">/ month</span>
+          </p>
+          <p class="plan-note">That&rsquo;s only 13.905$ per meal</p>
+
+          <hr class="plan-divider" />
+
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              1 meal everyday
+            </li>
+            <li class="plan-feature">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              Order 24*7
+            </li>
+            <li class="plan-feature">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              Access to newest creations
+            </li>
+            <li class="plan-feature">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              Free delivery
+            </li>
+          </ul>
+
+          <hr class="plan-divider" />
+
+          <div class="plan-cta">
+            <a href="#top" class="btn btn--primary">Sign up</a>
+          </div>
+        </article>
+
+        <!-- Pro -->
+        <article class="plan-card">
+          <h3 class="plan-name">Pro</h3>
+          <p class="plan-price-line">
+            <span class="plan-price">$199</span><span class="plan-period">/ month</span>
+          </p>
+          <p class="plan-note">That&rsquo;s only 10.905$ per meal</p>
+
+          <hr class="plan-divider" />
+
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              1 meal in 10
+            </li>
+            <li class="plan-feature">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              Order 24*7
+            </li>
+            <li class="plan-feature">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              Access to newest creations
+            </li>
+            <li class="plan-feature">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              Free delivery
+            </li>
+          </ul>
+
+          <hr class="plan-divider" />
+
+          <div class="plan-cta">
+            <a href="#top" class="btn btn--outline">Sign up</a>
+          </div>
+        </article>
+
+        <!-- Starter -->
+        <article class="plan-card">
+          <h3 class="plan-name">Starter</h3>
+          <p class="plan-price-line">
+            <span class="plan-price">19$</span><span class="plan-period">/ meal</span>
+          </p>
+          <p class="plan-note">&nbsp;</p>
+
+          <hr class="plan-divider" />
+
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              1 meal month
+            </li>
+            <li class="plan-feature">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              Order 24*7
+            </li>
+            <li class="plan-feature">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round" /></svg>
+              Access to newest creations
+            </li>
+            <li class="plan-feature">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              Free delivery
+            </li>
+          </ul>
+
+          <hr class="plan-divider" />
+
+          <div class="plan-cta">
+            <a href="#top" class="btn btn--outline">Sign up</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- Section 6: Footer                                              -->
+  <!-- ============================================================= -->
+  <footer id="site-footer" class="site-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <nav aria-label="Footer navigation">
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#top">About us</a></li>
+            <li><a class="footer-link" href="#top">Blog</a></li>
+            <li><a class="footer-link" href="#top">Press</a></li>
+            <li><a class="footer-link" href="#top">iOS App</a></li>
+            <li><a class="footer-link" href="#top">Android App</a></li>
+          </ul>
+        </nav>
+
+        <div class="socials">
+          <a class="social" href="#top" aria-label="Facebook">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.3 0-1.28-.1-2.4-.1-2.4 0-4 1.45-4 4.1v2.3H7.6V13h2.7v8h3.2z" />
+            </svg>
+          </a>
+          <a class="social" href="#top" aria-label="Twitter">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.7a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4-.6.2-1.2.2-1.8.1a4.1 4.1 0 0 0 3.8 2.9A8.2 8.2 0 0 1 2 18.6a11.6 11.6 0 0 0 6.3 1.8c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2.3z" />
+            </svg>
+          </a>
+          <a class="social social--text" href="#top" aria-label="Google Plus">
+            <span aria-hidden="true">G</span>
+          </a>
+          <a class="social" href="#top" aria-label="Instagram">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <p class="copyright">
+        Copyright &copy; 2026 by omnifood. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Tiny helper: close the mobile menu after tapping a link.
+       This is the only JavaScript on the page (allowed for the navbar toggle). -->
+  <script>
+    document.querySelectorAll('.nav-panel a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        document.getElementById('nav-toggle').checked = false;
+      });
+    });
+  </script>
+</body>
+</html>
